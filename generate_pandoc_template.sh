@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-ROOT_SRC_PATH=
-PROJ_TEMPLATE_PATH=${ROOT_SRC_PATH}/proj-template
-GENSCRIPT_PATH=${ROOT_SRC_PATH}/genscript
-THEME_PATH=${ROOT_SRC_PATH}/themes
+ROOT_SRC_PATH=/home/jacopo/Documents/UniBo/pandoc-latex
+PROJ_TEMPLATE_PATH=${ROOT_SRC_PATH}/pandoc-proj-template
+GENSCRIPT_PATH=${ROOT_SRC_PATH}/pandoc-genscript
+THEME_PATH=${ROOT_SRC_PATH}/pandoc-themes
 PROJ_PATH=$1
 PROJ_NAME=$2
 
