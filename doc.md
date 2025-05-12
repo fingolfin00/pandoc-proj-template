@@ -4,6 +4,7 @@ colorlinks: true
 citation-method: natbib
 header-includes: |
     \usepackage{hyperref}
+    \usepackage{amsmath}
     \hypersetup{colorlinks=false,
         allbordercolors={0 0 0},
         pdfborderstyle={/S/U/W 1}}
