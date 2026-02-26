@@ -7,11 +7,11 @@ THEME_PATH=${ROOT_SRC_PATH}/pandoc-themes
 PROJ_PATH=$1
 PROJ_NAME=$2
 
-cp ${THEME_PATH}/*tex ${GENSCRIPT_PATH}/*sh ${PROJ_PATH}/
+ln -rs ${THEME_PATH}/*tex ${GENSCRIPT_PATH}/*sh ${PROJ_PATH}/
 touch ${PROJ_PATH}/proj.bib
 if [ -n "${PROJ_NAME}" ]; then
 	cp ${PROJ_TEMPLATE_PATH}/doc.md ${PROJ_PATH}/${PROJ_NAME}.md
-	sed -i "s/^DOC=.*$/DOC=${PROJ_NAME}/g" ${PROJ_PATH}/generate_pandoc.sh
+	# sed -i "s/^DOC=.*$/DOC=${PROJ_NAME}/g" ${PROJ_PATH}/generate_pandoc.sh
 else
 	cp ${PROJ_TEMPLATE_PATH}/doc.md ${PROJ_PATH}/
 fi
